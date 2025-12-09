@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나의 취향과 가치관 - 드라마</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(12, 10, 10);
+    font-family: Verdana;
+    color: #a1a657;
+    padding-top: 70px;
+}
+
+
+.header {
+    background-color: #000000;
+    border-bottom: 2px solid #a1a657;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    float: right;
+    line-height: 70px;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0 15px;
+    color: #9da34b;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+.nav a.active {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.content-wrapper {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.review-section {
+    overflow: auto;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+
+.item-img {
+    float: left;
+    width: 30%;
+    height: 480px;
+    background-color: #000000;
+    margin-right: 3%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item-img img {
+    width: 110%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.item-text {
+    float: left;
+    width: 57%;
+}
+
+.item-text h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.item-text p {
+    line-height: 1.6;
+}
+
+
+.main-img-section {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: 50px 0;
+}
+
+
+.main-img-box {
+    width: 100%;
+    max-height: 1000px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.main-img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s ease;
+}
+
+
+.main-img-box:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+.slide-left {
+    animation: slideLeft 0.35s ease forwards;
+}
+.slide-right {
+    animation: slideRight 0.35s ease forwards;
+}
+
+
+.footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #a1a657;
+    border-top: 2px solid #a1a657;
+    margin-top: 40px;
+}
+
+/* 모바일 대응 */
+@media only screen and (max-width: 620px) {
+    .logo, .nav, .item-img, .item-text {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .item-img {
+        height: 250px;
+        margin-bottom: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- 헤더 -->
+<div class="header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/logo.png">
+        </a>
+    </div>
+    <div class="nav">
+        <a href="movie.html">Movie</a>
+        <a href="drama.html">Drama</a>
+        <a href="book.html"class="active">Book</a>
+        <a href="music.html">Music</a>
+        <a href="game.html">Game</a>
+    </div>
+</div>
+
+<!-- 제목 콘텐츠 -->
+<div class="content-wrapper">
+
+    <div class="subpage-text-header" style="text-align: center; padding: 40px 0;">
+        <h1 style="color: #ffffff; font-size: 2.5em;">My Favorite Book</h1>
+        <p style="margin-top: 10px;">제가 읽은 책 중 가장 인상깊은 책을 소개합니다.</p>
+    </div>
+
+    <!-- 책 리뷰 -->
+    <div class="review-section">
+        <div class="item-img">
+            <img src='img/book_1.jpg'>
+        </div>
+
+        <div class="item-text">
+            <br><br><br><br><br><br>
+            <h2>폭풍의 언덕 (1847)</h2>
+            <p>워더링하이츠 라는 저택 안에서 일어나는 이야기.</p><br>
+            <p>언쇼가 데려온 고아 히스클리프와 캐서린의 사랑, 힌들리의 학대.</p><br>
+            <p>폭풍이 몰아치는 언덕 위에서 펼쳐지는 악마적인 격정과 증오.</p><br>
+            <p>현실을 초월한 폭풍같은 사랑 이야기가 펼쳐진다.</p><br>
+            <p>끝없는 복수와 증오, 사랑이 폭풍처럼 휘몰아치는 이야기다.</p>
+        </div>
+    </div>
+
+</div>
+
+<br><br><br><br>
+
+<div class="main-img-section">
+    <div class="main-img-box" onclick="nextImg()">
+        <img id="slider-img" src="img/book_2.png">
+    </div>
+</div>
+
+<!-- 설명 텍스트 -->
+<div class="content-wrapper" style="text-align:center; color:white; margin-top:40px;">
+    <h2>사랑인가 증오인가</h2>
+</div>
+<div class="content-wrapper" style="text-align:center; color:#a1a657; margin-top:40px;">
+    <p>히스클리프와 캐서린의 관계가 정말 진정한 사랑이였을까</p><br>
+    <p>캐서린이 죽음을 앞두고 있을 때 입맞추고 서로 갈망하는 모습을 보면</p><br>
+    <p>그 둘의 사랑에 더욱 궁금증을 갖게 된다.</p><br><br>
+    <p>서로를 거칠게 헐뜯고 부정하며 욕하고 서로를 증오했지만</p><br>
+    <p>그 질투와 시기의 원인조차도 사랑이였기에,</p><br>
+    <p>책을 읽으면서도 이 둘 만이 아닌 주변의 인물들,</p><br>
+    <p>거대한 폭풍 속에 휘말려 고통받은 이들까지도 안쓰럽게 느껴졌다.</p><br>
+   
+</div>
+
+<!-- 푸터 -->
+<div class="footer">
+    &copy; 2025 My Insights on Prefeerences and Values
+</div>
+
+<script>
+let images = [
+    "img/book_2.png",
+    "img/book_3.png",
+    "img/book_4.png",
+    "img/book_5.png"
+];
+
+let index = 0;
+const sliderImg = document.getElementById("slider-img");
+
+function nextImg() {
+    index = (index + 1) % images.length;
+    sliderImg.src = images[index];
+}
+</script>
+
+</body>
+</html>

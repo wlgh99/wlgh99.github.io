@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나의 취향과 가치관 - 드라마</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(12, 10, 10);
+    font-family: Verdana;
+    color: #b1a07f;
+    padding-top: 70px; 
+}
+
+
+
+
+.header {
+    background-color: #000000;
+    border-bottom: 2px solid #a68c57;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    float: right;
+    line-height: 70px;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0 15px;
+    color: #dfbb73;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+.nav a.active {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.content-wrapper {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
+.review-section {
+    overflow: auto;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+
+.item-img {
+    float: left;
+    width: 30%;
+    height: 520px;
+    background-color: #000000;
+    margin-right: 3%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.main-img-section {
+    width: 100%;
+    text-align: center; 
+    position: relative;       
+    margin: 50px 0;     
+}
+
+.main-img-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;   
+    display: block;
+    margin: 0 auto;
+    max-height: 700px;
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+
+.item-text {
+    float: left;
+    width: 57%;
+}
+
+.item-text h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.item-text p {
+    line-height: 1.6;
+}
+
+
+.footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #a68c57;
+    border-top: 2px solid #a68c57;
+    margin-top: 40px;
+}
+
+/* 모바일 대응 */
+@media only screen and (max-width: 620px) {
+    .logo, .nav, .item-img, .item-text {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .item-img {
+        height: 250px;
+        margin-bottom: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- 헤더 -->
+<div class="header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/logo.png">
+        </a>
+    </div>
+    <div class="nav">
+        <a href="movie.html"class="active">Movie</a>
+        <a href="drama.html">Drama</a>
+        <a href="book.html">Book</a>
+        <a href="music.html">Music</a>
+        <a href="game.html">Game</a>
+    </div>
+</div>
+
+<!-- 제목 콘텐츠 -->
+<div class="content-wrapper">
+
+    <div class="subpage-text-header" style="text-align: center; padding: 40px 0;">
+        <h1 style="color: #ffffff; font-size: 2.5em;">My Favorite Movie</h1>
+        <p style="margin-top: 10px;">제가 본 영화 중 가장 인상깊은 영화를 소개합니다.</p>
+    </div>
+
+    <!-- 내용 -->
+    <div class="review-section">
+        <div class="item-img">
+            <img src='img/movie_1.jpg'>
+        </div>
+
+        <div class="item-text">
+            <br><br><br><br><br><br>
+            <h2>조커 (2019)</h2>
+            <p>사회에서 소외된 코미디언 지망생 아서 플렉은 정신질환과 빈곤 속에서 고독하게 살아간다.</p><br>
+            <p>그는 약물 치료와 상담 지원마저 끊기며 점점 현실과 단절되어 갔다.</p><br>
+            <p>일상 속 지속되는 폭력과 조롱 끝에, 지하철에서 자신을 위협하던 남성들을 살해하며</p><br>
+            <p>그의 삶은 한 순간에 변하게 된다. 아서는 자신이 믿어온 정체성마저 흔들리며</p><br>
+            <p>광기 끝에서 스스로를 '조커'라는 새로운 인물로 받아들인다.</p>
+        </div>
+    </div>
+</div>
+
+<br><br><br><br>
+
+ <div class="main-img-section">
+        <div class="main-img-box">
+            <img src='img/movie_2.png'>
+        </div>
+    </div>
+
+<div class="content-wrapper" style="text-align:center; color:white; margin-top:40px;">
+    <br><h2>선명하게 드러나는 인간의 내면적 변화</h2>
+    </div>
+    <div class="content-wrapper" style="text-align:center; color:#b1a07f; margin-top:40px;">
+    <p>한 사람의 인생이,</p><br>
+    <p>그의 믿음, 삶을 지탱하던 기둥이,</p><br>
+    <p>세상의 벽이 서서히 무너지며 오는 '아서'의 내면적 변화</p><br>
+    <p>모든 것이 무너진 순간 인간이 어떻게 변해 가는지를</p><br>
+    <p>너무나 선명하게 보여줬습니다.</p><br><br>
+    <p>그러한 장면이 정말 답답하고 힘든</p><br>
+    <p>여러 감정이 몰려오며 연출되었습니다. </p><br>
+    <p>그와 동시에 뛰어났던 호아킨 피닉스의 연기로 인해</p> <br>
+    <p>더욱 몰입 되는 영화였습니다.</p><br>
+</div>
+        
+
+<!-- 푸터 -->
+<div class="footer">
+    &copy; 2025 My Insights on Prefeerences and Values
+</div>
+
+</body>
+</html>

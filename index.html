@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나의 취향과 가치관 - 메인</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(30, 25, 24);
+    font-family: Verdana;
+    color: #a68c57;
+    padding-top: 70px; 
+}
+
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #000000; 
+}
+
+
+.header {
+    background-color: #000000;
+    border-bottom: 2px solid #a68c57;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    float: right;
+    line-height: 70px;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0 15px;
+    color: #a68c57;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+.review-section {
+    overflow: auto;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #333;
+}
+
+.main-img-section {
+    width: 100%;
+}
+
+.main-img-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;  
+    margin: 0 auto;
+}
+
+
+.item-img {
+    float: left;
+    width: 30%;
+    height: 520px;
+    background-color: #000000;
+    margin-right: 3%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.item-text {
+    float: left;
+    width: 57%;
+}
+
+.item-text h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.item-text p {
+    line-height: 1.6;
+}
+
+.footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #a68c57;
+    border-top: 2px solid #a68c57;
+    margin-top: 40px;
+}
+
+/* 모바일 대응 */
+@media only screen and (max-width: 620px) {
+    .logo, .nav, .item-img, .item-text {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .item-img {
+        height: 250px;
+        margin-bottom: 15px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <a href="index.html">
+            <img src='img/logo.png'>
+        </a>
+    </div>
+    <div class="nav">
+        <a href="movie.html">Movie</a>
+        <a href="drama.html">Drama</a>
+        <a href="book.html">Book</a>
+        <a href="music.html">Music</a>
+        <a href="game.html">Game</a>
+    </div>
+</div>
+
+    <div class="main-img-section">
+        <div class="main-img-box">
+            <img src='img/main4.png' width='1692'>
+        </div>
+    </div>
+
+    <div class="footer">
+     &copy; 2025 My Insights on Prefeerences and Values
+    </div>
+
+</div>
+
+</body>
+</html>

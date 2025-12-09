@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나의 취향과 가치관 - 드라마</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(12, 10, 10);
+    font-family: Verdana;
+    color: #d07171;
+    padding-top: 70px; 
+}
+
+
+.header {
+    background-color: #000000;
+    border-bottom: 2px solid #9d0000;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    float: right;
+    line-height: 70px;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0 15px;
+    color: #ff7070;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+.nav a.active {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.content-wrapper {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* 리뷰 섹션 */
+.review-section {
+    overflow: auto;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+
+.item-img {
+    float: left;
+    width: 35%;
+    height: 500px;
+    background-color: #000000;
+    margin-right: 3%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.main-img-section {
+    width: 100%;
+    text-align: center;  
+    position: relative;       
+    margin: 50px 0;     
+}
+
+.main-img-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;   
+    display: block;
+    margin: 0 auto;
+    max-height: 700px;
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+
+.item-text {
+    float: left;
+    width: 59%;
+}
+
+.item-text h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.item-text p {
+    line-height: 1.6;
+}
+
+
+.footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #cd2020;
+    border-top: 2px solid #cd2020;
+    margin-top: 40px;
+}
+
+/* 모바일 대응 */
+@media only screen and (max-width: 620px) {
+    .logo, .nav, .item-img, .item-text {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .item-img {
+        height: 250px;
+        margin-bottom: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- 헤더 -->
+<div class="header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/logo.png">
+        </a>
+    </div>
+    <div class="nav">
+        <a href="movie.html">Movie</a>
+        <a href="drama.html"class="active">Drama</a>
+        <a href="book.html">Book</a>
+        <a href="music.html">Music</a>
+        <a href="game.html">Game</a>
+    </div>
+</div>
+
+<!-- 제목 콘텐츠 -->
+<div class="content-wrapper">
+
+    <div class="subpage-text-header" style="text-align: center; padding: 40px 0;">
+        <h1 style="color: #ffffff; font-size: 2.5em;">My Favorite Drama</h1>
+        <p style="margin-top: 10px;">제가 본 드라마 중 가장 인상깊은 드라마를 소개합니다.</p>
+    </div>
+
+    <!-- 내용 -->
+    <div class="review-section">
+        <div class="item-img">
+            <img src='img/drama_1.jpg'>
+        </div>
+
+        <div class="item-text">
+            <br><br><br><br><br>
+            <h2>기묘한 이야기(2016~2026)</h2>
+            <p>1980년대 미국 인디애나주 로앤 카운티에 위치한 마을 호킨스(Hawkins)를 배경으로 하고 있으며</p> <br>
+            <p>꽤나 방대하고 짜임새 있는 세계관을 갖추고 있다. 현실 세계의 호킨스 마을과 밀접한 관계가 있는 <br>
+            뒤집힌 세계(The Upside Down)라는 세계관이 존재한다.</p><br>
+            <p>어느 날, 주인공 일행 중 한 명인 윌이 이 뒤집힌 세계의 괴물에게 납치당한다.</p><br>
+            <p>윌을 구하기 위해 주인공 일행과 과족, 그리고 뒤집힌 세계를 연구하는 연구소에서 키워지던</p><br>
+            <p>일레븐이라는 아이와 함께 뒤집힌 세계로 넘어가 윌을 구출하게 된다.</p><br>
+            <p>그 이후로도 시리즈 내내 호킨스 마을을 위협하는 뒤집힌 곳의 괴물에 맞서는 내용이다.</p>
+        </div>
+    </div>
+</div>
+
+<br><br><br><br>
+
+ <div class="main-img-section">
+        <div class="main-img-box">
+            <img src='img/drama_2.png'>
+        </div>
+    </div>
+
+<div class="content-wrapper" style="text-align:center; color:white; margin-top:40px;">
+    <br><h2>다양한 인물 관계, 짜임새 있는 스토리</h2>
+    </div>
+    <div class="content-wrapper" style="text-align:center; color:#ff7070; margin-top:40px;">
+    <p>기묘한 이야기는 전세계적으로 인기를 얻은 넷플릭스 시리즈 중 하나입니다.</p><br>
+    <p>이러한 인기를 얻게 된 배경은 1980년대의 향수를 자극하는 설정,</p><br>
+    <p>매력적인 스토리와 캐릭터, 배우들의 훌륭한 연기 덕분입니다.</p><br>
+    <p>한국에서는 다른 넷플릭스 해외 시리즈에 비해 상대적으로 인기가 덜하지만,</p><br>
+    <p>저에겐 SF호러 장르와 독특한 세계관이 너무나 마음에 들었습니다.</p><br><br>
+</div>
+        
+
+<!-- 푸터 -->
+<div class="footer">
+    &copy; 2025 My Insights on Prefeerences and Values
+</div>
+
+</body>
+</html>

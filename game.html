@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나의 취향과 가치관 - 드라마</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(12, 10, 10);
+    font-family: Verdana;
+    color: #8187df;
+    padding-top: 70px; /* 고정 헤더 때문에 위쪽 여백 */
+}
+
+
+
+/* 헤더 */
+.header {
+    background-color: #000000;
+    border-bottom: 2px solid #5347df;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    float: right;
+    line-height: 70px;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0 15px;
+    color: #666dd6;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+.nav a.active {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* 콘텐츠가 너무 넓게 퍼지는 문제 해결 → 중앙 정렬 + 넓이 제한 */
+.content-wrapper {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+/* 리뷰 섹션 */
+.review-section {
+    overflow: auto;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+/* 이미지 박스 수정 (회색 박스 → 실제 이미지 표시) */
+.item-img {
+    float: left;
+    width: 40%;
+    height: 550px;
+    background-color: rgb(12, 10, 10);
+    margin-right: 5%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.main-img-section {
+    width: 100%;
+    text-align: center;  /* 가운데 정렬 */
+    position: relative;       
+    margin: 50px 0;     
+}
+
+.main-img-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;   /* 전체 이미지 보이기 */
+    display: block;
+    margin: 0 auto;
+    max-height: 700px;
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+/* 텍스트 영역 */
+.item-text {
+    float: left;
+    width: 50%;
+}
+
+.item-text h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.item-text p {
+    line-height: 1.6;
+}
+
+/* 푸터 */
+.footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #5347df;
+    border-top: 2px solid #5347df;
+    margin-top: 40px;
+}
+
+/* 모바일 대응 */
+@media only screen and (max-width: 620px) {
+    .logo, .nav, .item-img, .item-text {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .item-img {
+        height: 250px;
+        margin-bottom: 15px;
+    }
+}
+
+.video-card {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #0d0d0d;
+    border: 2px solid #5347df;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.video-card video {
+    width: 100%;
+    max-height: 600px;
+    border-radius: 6px;
+    outline: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 헤더 -->
+<div class="header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/logo.png">
+        </a>
+    </div>
+    <div class="nav">
+        <a href="movie.html">Movie</a>
+        <a href="drama.html">Drama</a>
+        <a href="book.html">Book</a>
+        <a href="music.html">Music</a>
+        <a href="game.html"class="active">Game</a>
+    </div>
+</div>
+
+<!-- 제목 콘텐츠 -->
+<div class="content-wrapper">
+
+    <div class="subpage-text-header" style="text-align: center; padding: 40px 0;">
+        <h1 style="color: #ffffff; font-size: 2.5em;">My Favorite Movie</h1>
+        <p style="margin-top: 10px;">제가 한 게임 중 가장 인상깊은 게임을 소개합니다.</p>
+    </div>
+
+    <!-- 내용 -->
+    <div class="review-section">
+        <div class="item-img">
+            <img src='img/game_1.png'>
+        </div>
+
+        <div class="item-text">
+            <br><br><br><br><br><br><br><br>
+            <h2>산나비</h2>
+            <p>기계팔로 무장한 퇴역 군인은 초거대 재벌의 부패한 사유 도시를 오릅니다. </p><br>
+            <p>도시에 숨겨진 비밀을 밝혀내기 위해, 그리고 '산나비'를 찾아내 복수하기 위해. </p><br>
+            <p>사이버펑크 디스토피아를 배경으로 펼쳐지는 역동적이고</p><br>
+            <p>스타일리쉬한 2D "사슬 액션" 어드벤처 플랫포머 게임, 산나비입니다.</p><br>
+        </div>
+    </div>
+</div>
+
+<br><br><br><br>
+
+ <div class="main-img-section">
+        <div class="main-img-box">
+            <img src='img/game_2.png'>
+        </div>
+    </div>
+<br><br>
+    <div class="video-card">
+    <video src="gamevideo.mp4" controls></video>
+</div>
+
+<div class="content-wrapper" style="text-align:center; color:white; margin-top:40px;">
+    <br><h2>그렇기에 소중했고, 그렇기에 우린 나아간다.</h2>
+    </div>
+    <div class="content-wrapper" style="text-align:center; color:#8187df; margin-top:40px;">
+    <p>압도적인 연출, 훌륭한 도트프레임 활용</p><br>
+    <p>눈을 사로잡는 수려한 아트워크</p><br>
+    <p>세밀하고 시원한 사운드이펙트</p><br>
+    <p>탁월한 속도감과 쾌감을 선사하는 사슬액션</p><br>
+</div>
+        
+
+<!-- 푸터 -->
+<div class="footer">
+    &copy; 2025 My Insights on Prefeerences and Values
+</div>
+
+</body>
+</html>
